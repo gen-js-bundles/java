@@ -1,21 +1,14 @@
 <% if(build.tool == 'gradle') { %>
 
 buildscript {
-    ext {
-        springBootVersion = '<%= version.springboot %>.RELEASE'
-    }
     repositories {
         mavenCentral()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'spring-boot' 
 
 jar {
     baseName = '<%= project.name %>'
@@ -54,7 +47,6 @@ dependencies {
     }
   })
 %>
-    testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
 eclipse {
