@@ -56,9 +56,9 @@ module.exports = {
       },{
         name: "Data - JDBI - SQL convenience library - http://jdbi.org", 
         value: {
-          groupId: "org.springframework.data",
-          artifactId: "spring-data-mongodb",
-          version: "1.6.2.RELEASE"
+          groupId: "org.jdbi",
+          artifactId: "jdbi",
+          version: "2.59"
         }
       }
     ];
