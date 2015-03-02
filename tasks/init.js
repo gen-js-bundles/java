@@ -19,6 +19,13 @@ module.exports = {
         checked: true
       },
       {
+	name: "Test - Mockito - http://www.mockito.org/",
+	value: {
+          groupId: "'org.mockito",
+          artifactId: "mockito-all",
+          version: "1.10.19"
+        }
+      },{
         name: "MongoDB - MongoDB Java Driver - http://docs.mongodb.org/ecosystem/drivers/java",
 	  value: {
           groupId: "org.mongodb",
