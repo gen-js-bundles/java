@@ -60,6 +60,48 @@ module.exports = {
           artifactId: "jdbi",
           version: "2.59"
         }
+      },{
+        name: "Database driver - MySQL - http://dev.mysql.com/usingmysql/java", 
+        value: {
+          groupId: "mysql",
+          artifactId: "mysql-connector-java",
+          version: "5.1.34"
+        }
+      },{
+        name: "Database driver - PostgreSQL - http://jdbc.postgresql.org", 
+        value: {
+          groupId: "org.postgresql",
+          artifactId: "postgresql",
+          version: "9.4-1201-jdbc41"
+        }
+      },{
+        name: "Database driver - H2 - http://www.h2database.com", 
+        value: {
+          groupId: "com.h2database",
+          artifactId: "h2",
+          version: "1.4.185"
+        }
+      },{
+        name: "Database driver - HSQLDB - http://dev.mysql.com/usingmysql/java/", 
+        value: {
+          groupId: "org.postgresql",
+          artifactId: "postgresql",
+          version: "9.4-1201-jdbc41"
+        }
+      },{
+        name: "Database driver - Oracle - ojdbc14 - http://www.oracle.com/technology/software/tech/java/sqlj_jdbc", 
+        value: {
+          groupId: "com.oracle",
+          artifactId: "ojdbc14",
+          version: "10.2.0.4.0"
+        }
+      },{
+        name: "Web - webjars - AngularJS - http://jdbi.org", 
+        value: {
+          groupId: "org.webjars",
+          artifactId: "angularjs",
+          version: "1.3.14"
+        }
       }
     ];
 
