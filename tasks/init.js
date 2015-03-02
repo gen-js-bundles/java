@@ -37,6 +37,13 @@ module.exports = {
           artifactId: "mongojack",
           version: "2.3.0"
         }
+      },{
+        name: "MongoDB - Spring Data MongoDB - http://projects.spring.io/spring-data-mongodb", 
+        value: {
+          groupId: "org.springframework.data",
+          artifactId: "spring-data-mongodb",
+          version: "1.6.2.RELEASE"
+        }
       }
     ];
 
