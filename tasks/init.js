@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         name: "MongoDB - MongoDB Java Driver - http://docs.mongodb.org/ecosystem/drivers/java",
-	      value: {
+	  value: {
           groupId: "org.mongodb",
           artifactId: "mongo-java-driver",
           version: "2.13.0"
