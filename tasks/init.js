@@ -15,7 +15,8 @@ module.exports = {
           groupId: "junit",
           artifactId: "junit",
           version: "4.12"
-        }
+        },
+        checked: true
       },
       {
         name: "MongoDB - MongoDB Java Driver - http://docs.mongodb.org/ecosystem/drivers/java",
