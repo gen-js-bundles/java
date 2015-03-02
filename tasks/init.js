@@ -10,6 +10,14 @@ module.exports = {
 
     var dependenciesChoices = [
       {
+	name: "Test - JUnit - http://junit.org/",
+	value: {
+          groupId: "junit",
+          artifactId: "junit",
+          version: "4.12"
+        }
+      },
+      {
         name: "MongoDB - MongoDB Java Driver - http://docs.mongodb.org/ecosystem/drivers/java",
 	      value: {
           groupId: "org.mongodb",
