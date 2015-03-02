@@ -10,275 +10,56 @@ module.exports = {
 
     var dependenciesChoices = [
       {
-        name: "Test - Spring Boot Test",
-	value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-test",
-          scope: "test"
+        name: "MongoDB - MongoDB Java Driver - http://docs.mongodb.org/ecosystem/drivers/java/",
+	      value: {
+          groupId: "'org.mongodb",
+          artifactId: "mongo-java-driver",
+          version: "2.13.0"
         }
-      },
-      {
-        name: "Spring Data - JDBC",
+      },{
+        name: "MongoDB - Morphia - https://github.com/mongodb/morphia",
         value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-jdbc"
+          groupId: "org.mongodb.morphia",
+          artifactId: "morphia",
+          version: "0.110"
         }
-      },
-      {
-        name: "Spring Data - JPA",
+      },{
+        name: "MongoDB - Jongo - http://jongo.org/",
         value: {
-         groupId: "org.springframework.boot",
-         artifactId: "spring-boot-starter-data-jpa"
-       }
-      },
-      {
-        name: "Spring Data - MongoDB",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-data-mongodb"
+          groupId: "org.jongo",
+          artifactId: "jongo",
+          version: "1.1"
         }
-      },
-      {
-        name: "Spring Data - Redis",
+      },{
+        name: "MongoDB - MongoJack - http://mongojack.org/", 
         value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-redis"
-        }
-      },
-      {
-        name: "Spring Data - Gemfire",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-data-gemfire"
-        }
-      },
-      {
-        name: "Spring Data - Solr",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-data-solr"
-        }
-      },
-      {
-        name: "Spring Data - Elasticsearch",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-data-elasticsearch"
-        }
-      },
-      {
-        name: "Database Driver - Derby",
-        value: {
-          groupId: "org.apache.derby",
-          artifactId: "derby"
-        }
-      },
-      {
-        name: "Database Driver - H2",
-        value: {
-          groupId: "com.h2database",
-          artifactId: "h2"
-        }
-      },
-      {
-        name: "Database Driver - HSQLDB",
-        value: {
-          groupId: "org.hsqldb",
-          artifactId: "hsqldb"
-        }
-      },
-      {
-        name: "Database Driver - MySQL",
-        value: {
-          groupId: "mysql",
-          artifactId: "mysql-connector-java"
-        }
-      },
-      {
-        name: "Web - Web",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-web"
-        }
-      },
-      {
-        name: "Web - Websocket",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-websocket"
-        }
-      },
-      {
-        name: "Web - WS (WebServices)",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-ws"
-        }
-      },
-      {
-        name: "Web - Jersey (JAX-RS)",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-jersey"
-        }
-      },
-      {
-        name: "Web - Rest Repositories",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-data-rest"
-        }
-      },
-      {
-        name: "Web - Mobile",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-mobile"
-        }
-      },
-      {
-        name: "Web - Security",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-security"
-        }
-      },
-      {
-        name: "Core - AOP",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-aop"
-        }
-      },
-      {
-        name: "Core - Atomikos (JTA)",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-jta-atomikos"
-        }
-      },
-      {
-        name: "Core - Bitronix (JTA)",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-jta-bitronix"
-        }
-      },
-      {
-        name: "I/O - Batch",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-batch"
-        }
-      },
-      {
-        name: "I/O - Integration",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-integration"
-        }
-      },
-      {
-        name: "I/O - JMS - Hornetq",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-hornetq"
-        }
-      },
-      {
-        name: "I/O - AMQP",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-amqp"
-        }
-      },
-      {
-        name: "I/O - Mail",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-mail"
-        }
-      },
-      {
-        name: "Template Engines - Freemarker",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-freemarker"
-        }
-      },
-      {
-        name: "Template Engines - Velocity",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-velocity"
-        }
-      },
-      {
-        name: "Template Engines - Groovy Templates",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-groovy-templates"
-        }
-      },
-      {
-        name: "Template Engines - Thymeleaf",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-thymeleaf"
-        }
-      },
-      {
-        name: "Template Engines - Mustache",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-mustache"
-        }
-      },
-      {
-        name: "Social - Facebook",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-social-facebook"
-        }
-      },
-      {
-        name: "Social - Linkedin",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-social-linkedin"
-        }
-      },
-      {
-        name: "Social - Twitter",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-social-twitter"
-        }
-      },
-      {
-        name: "Ops - Actuator",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-actuator"
-        }
-      },
-      {
-        name: "Ops - Cloud Connectors",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-cloud-connectors"
-        }
-      },
-      {
-        name: "Ops - Remote Shell",
-        value: {
-          groupId: "org.springframework.boot",
-          artifactId: "spring-boot-starter-remote-shell"
+          groupId: "org.mongojack",
+          artifactId: "mongojack",
+          version: "2.3.0"
         }
       }
     ];
 
     var questions = [
+      {
+        type: 'list',
+        name: 'javaVersion',
+        message: 'Which Java version ?',
+        choices: [{
+          name: '1.8',
+          value: '1.8'
+        },{
+          name: '1.7',
+          value: '1.7'
+        },{
+          name: '1.6',
+          value: '1.6'
+        },{
+          name: '1.5',
+          value: '1.5'
+        }],
+        default: '1.8'
+      },
       {
         type: 'list',
         name: 'buildTool',
@@ -347,7 +128,6 @@ module.exports = {
       if(data.global.version == null) {
         data.global.version = {};
       }
-      data.global.version.springboot = '1.2.2';
       if(data.global.version.java == null) {
         data.global.version.java = '1.8';
       }
