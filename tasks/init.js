@@ -96,6 +96,27 @@ module.exports = {
           version: "10.2.0.4.0"
         }
       },{
+        name: "Database driver - Elasticsearch - http://www.elasticsearch.org", 
+        value: {
+          groupId: "org.elasticsearch",
+          artifactId: "elasticsearch",
+          version: "1.4.4"
+        }
+      },{
+        name: "Database driver - Redis - Jedis - https://github.com/xetorthio/jedis", 
+        value: {
+          groupId: "redis.clients",
+          artifactId: "jedis",
+          version: "2.6.2"
+        }
+      },{
+        name: "Database driver - RabbitMQ - http://www.rabbitmq.com", 
+        value: {
+          groupId: "com.rabbitmq",
+          artifactId: "amqp-client",
+          version: "3.4.4"
+        }
+      },{
         name: "Web - webjars - AngularJS - http://jdbi.org", 
         value: {
           groupId: "org.webjars",
