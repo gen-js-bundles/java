@@ -10,7 +10,7 @@ module.exports = {
 
     var dependenciesChoices = [
       {
-        name: "MongoDB - MongoDB Java Driver - http://docs.mongodb.org/ecosystem/drivers/java/",
+        name: "MongoDB - MongoDB Java Driver - http://docs.mongodb.org/ecosystem/drivers/java",
 	      value: {
           groupId: "'org.mongodb",
           artifactId: "mongo-java-driver",
@@ -24,14 +24,14 @@ module.exports = {
           version: "0.110"
         }
       },{
-        name: "MongoDB - Jongo - http://jongo.org/",
+        name: "MongoDB - Jongo - http://jongo.org",
         value: {
           groupId: "org.jongo",
           artifactId: "jongo",
           version: "1.1"
         }
       },{
-        name: "MongoDB - MongoJack - http://mongojack.org/", 
+        name: "MongoDB - MongoJack - http://mongojack.org", 
         value: {
           groupId: "org.mongojack",
           artifactId: "mongojack",
