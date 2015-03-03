@@ -14,7 +14,8 @@ module.exports = {
 	value: {
           groupId: "junit",
           artifactId: "junit",
-          version: "4.12"
+          version: "4.12",
+          scope: "test"
         },
         checked: true
       },
@@ -23,7 +24,8 @@ module.exports = {
 	value: {
           groupId: "'org.mockito",
           artifactId: "mockito-all",
-          version: "1.10.19"
+          version: "1.10.19",
+          scope: "test"
         }
       },{
         name: "MongoDB - MongoDB Java Driver - http://docs.mongodb.org/ecosystem/drivers/java",
