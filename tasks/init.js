@@ -35,7 +35,6 @@ module.exports = {
           version: "4.1.5.RELEASE",
           scope: "test"
         }
-      }
       },{
         name: "MongoDB - MongoDB Java Driver - http://docs.mongodb.org/ecosystem/drivers/java",
 	  value: {
