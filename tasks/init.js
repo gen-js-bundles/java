@@ -22,11 +22,20 @@ module.exports = {
       {
 	name: "Test - Mockito - http://www.mockito.org/",
 	value: {
-          groupId: "'org.mockito",
+          groupId: "org.mockito",
           artifactId: "mockito-all",
           version: "1.10.19",
           scope: "test"
         }
+      },{
+      	name: "Test - Spring - https://github.com/spring-projects/spring-framework",
+	value: {
+          groupId: "org.springframework",
+          artifactId: "spring-test",
+          version: "4.1.5.RELEASE",
+          scope: "test"
+        }
+      }
       },{
         name: "MongoDB - MongoDB Java Driver - http://docs.mongodb.org/ecosystem/drivers/java",
 	  value: {
