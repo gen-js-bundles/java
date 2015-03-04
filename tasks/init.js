@@ -245,7 +245,7 @@ module.exports = {
         data.global.version = {};
       }
       if(data.global.version.java == null) {
-        data.global.version.java = '1.8';
+        data.global.version.java = answers.javaVersion;
       }
       
       if(data.global.build == null) {
