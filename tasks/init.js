@@ -140,6 +140,27 @@ module.exports = {
           artifactId: "angularjs",
           version: "1.3.14"
         }
+      },{
+        name: "Jsoup - http://jsoup.org/", 
+        value: {
+	  groupId: "org.jsoup",
+	  artifactId: "jsoup",
+	  version: "1.8.1"
+        }
+      },{
+        name: "Apache HTTPComponents - HTTPClient - http://hc.apache.org/httpcomponents-client-ga/", 
+        value: {
+	  groupId: "org.apache.httpcomponents",
+	  artifactId: "httpclient",
+	  version: "4.4"
+        }
+      },{
+        name: "Apache HTTPComponents - HTTPCore - http://hc.apache.org/httpcomponents-core-ga/", 
+        value: {
+	  groupId: "org.apache.httpcomponents",
+	  artifactId: "httpcore",
+	  version: "4.4"
+        }
       }
     ];
 
