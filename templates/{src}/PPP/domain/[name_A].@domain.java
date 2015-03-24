@@ -3,8 +3,11 @@ package <%=gen.package%>;
 import java.io.Serializable;
 
 <% each(entity.fields, function(field) { %>
-<%   if(field.type == 'Date') { %>
+<%   if(field.type == 'date') { %>
 import java.util.Date;
+<%   } %>
+<%   if(field.type == 'decimal') { %>
+import java.math.BigDecimal;
 <%   } %>
 <% }) %>
 <% each(entity.links, function(link, linkName) { %>
@@ -26,7 +29,14 @@ public class <%=gen.name%> implements Serializable {
 
   <%each(entity.fields, function(field) {%>
 
-    private <%=field.type.A()%> <%=field.name.a()%>;
+  <%
+    if(field.type.a() == 'decimal') {
+      var fieldType = 'BigDecimal';
+    } else {
+      var fieldType = field.type;
+    }
+  %>
+    private <%=fieldType.A()%> <%=field.name.a()%>;
   <%})%>
 <%
 each(entity.links, function(link, linkName) {
@@ -45,13 +55,20 @@ each(entity.links, function(link, linkName) {
 %>
 
   <%each(entity.fields, function(field) {%>
+    <%
+      if(field.type.a() == 'decimal') {
+        var fieldType = 'BigDecimal';
+      } else {
+        var fieldType = field.type;
+      }
+    %>
 
-    public <%=gen.name%> set<%=field.name.A()%>(<%=field.type.A()%> <%=field.name.a()%>) {
+    public <%=gen.name%> set<%=field.name.A()%>(<%=fieldType.A()%> <%=field.name.a()%>) {
     	this.<%=field.name.a()%> = <%=field.name.a()%>;
     	return this;
     }
 
-    public <%=field.type.A()%> get<%=field.name.A()%>() {
+    public <%=fieldType.A()%> get<%=field.name.A()%>() {
     	return this.<%=field.name.a()%>;
     }
   <%})%>
