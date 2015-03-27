@@ -10,7 +10,9 @@ public <%=current.name.A()%>Resource {
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
     public <%=method.return%> <%=method.name%>() {
-
+      <% if(method.body != null) { %>
+        <%= java.methodBody(method.name, method.body, 2)%>
+      <% } %>
     }
 
 

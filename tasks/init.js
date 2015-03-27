@@ -349,7 +349,6 @@ module.exports = {
         }
       }
       data.global.facets = facets;
-
       gfile.writeYaml(path.join(process.cwd(),'Genjsfile.yml'), data);
 
       var data = {
@@ -359,7 +358,6 @@ module.exports = {
         var dependencySelected = answers.dependenciesSelected[i];
         data.dependencies.push(dependencySelected.dependency);
       }
-
       gfile.writeYaml(path.join(process.cwd(),'model','config.@build.yml'), data);
 
       if(callback) {
